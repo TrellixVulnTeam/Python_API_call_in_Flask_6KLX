@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login System,</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="margin-top:50px;">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <h2>
+                    Please Give Your Phone Number And PIN to Login
+                </h2>
+                <br><br>
+                <form action="/login" method="POST">
+
+                    <div class="input-group">
+                        <span class="input-group-addon">Your Phone_number</span>
+                        <input type="text" class="form-control" name="phone_number" id="user" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon">Your PIN</span>
+                        <input type="text"  name="code" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+                    <input type="Submit" value="Login" class="btn btn-default btn-sm">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
